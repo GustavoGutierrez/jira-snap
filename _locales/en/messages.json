@@ -1,0 +1,10 @@
+{
+  "extension_name": {
+    "message": "JiraSnap",
+    "description": "Extension name"
+  },
+  "extension_description": {
+    "message": "Generate your daily plan from Jira In Progress tickets.",
+    "description": "Extension description"
+  }
+}

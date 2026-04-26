@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JiraSnap</title>
+  <link rel="stylesheet" href="styles/pico-local.min.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="jira-snap">
+    <header class="js-header" role="banner">
+      <div class="js-header__brand">
+        <img class="js-header__logo" src="images/icon128.png" alt="JiraSnap logo">
+        <span class="js-header__title">JiraSnap</span>
+        <span class="js-header__badge">v1.0</span>
+      </div>
+
+      <div class="js-lang-pill" role="group" aria-label="Language / Idioma">
+        <button id="lang-es" type="button" aria-pressed="true">ES</button>
+        <button id="lang-en" type="button" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <div class="js-status-bar" role="status" aria-live="polite">
+      <span id="status-dot" class="js-status-dot loading"></span>
+      <span id="status-message" class="js-status-msg">Cargando...</span>
+    </div>
+
+    <div class="js-utility-bar">
+      <button id="jump-to-preview" type="button" class="btn btn-ghost btn-sm"></button>
+      <button id="open-instructions" type="button" class="btn btn-ghost btn-sm"></button>
+      <button id="open-about" type="button" class="btn btn-ghost btn-sm"></button>
+    </div>
+
+    <div id="loading-state" class="js-empty" hidden>
+      <div class="js-empty__icon">…</div>
+      <p class="js-empty__title">JiraSnap</p>
+      <p id="loading-message" class="js-empty__body">Cargando...</p>
+    </div>
+
+    <div id="not-jira-state" class="js-empty" role="alert" hidden>
+      <div class="js-empty__icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="#FF5630" stroke-width="2"/>
+          <path d="M12 8v4M12 16h.01" stroke="#FF5630" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p id="not-jira-message" class="js-empty__title"></p>
+    </div>
+
+    <main id="main-content" hidden>
+      <section id="participants-section" class="js-section" aria-labelledby="participants-heading" hidden>
+        <div class="js-section__header">
+          <h2 id="participants-heading" class="js-section__title"></h2>
+          <div class="js-section__actions">
+            <button id="select-all-participants" type="button" class="btn btn-ghost btn-sm"></button>
+            <button id="clear-all-participants" type="button" class="btn btn-ghost btn-sm"></button>
+          </div>
+        </div>
+
+        <div id="participants-empty" class="js-empty" hidden>
+          <span id="participants-empty-text" class="js-empty__body"></span>
+        </div>
+
+        <ul id="participants-list" class="js-checkbox-list" role="listbox" aria-multiselectable="true"></ul>
+      </section>
+
+      <section id="tickets-section" class="js-section" aria-labelledby="tickets-heading" hidden>
+        <div class="js-section__header">
+          <h2 id="tickets-heading" class="js-section__title"></h2>
+          <div class="js-section__actions">
+            <button id="retry-tickets" type="button" class="btn btn-ghost btn-sm"></button>
+          </div>
+        </div>
+
+        <div id="tickets-empty" class="js-empty" hidden>
+          <span id="tickets-empty-text" class="js-empty__body"></span>
+        </div>
+
+        <ul id="tickets-list" class="js-ticket-list" role="list"></ul>
+      </section>
+
+      <section id="output-section" class="js-section" aria-labelledby="output-heading" hidden>
+        <div class="js-section__header">
+          <h2 id="output-heading" class="js-section__title"></h2>
+        </div>
+        <div class="js-output-options">
+          <label class="js-output-option">
+            <input id="include-type-in-copy" type="checkbox" checked>
+            <span id="include-type-label"></span>
+          </label>
+        </div>
+        <div id="output-preview" class="js-output" role="region" aria-live="polite"></div>
+      </section>
+
+      <div id="actions-row" style="display:flex; gap:8px; margin-top:4px;" hidden>
+        <button id="copy-plan" type="button" class="btn btn-success" style="flex:1;"></button>
+        <button id="reset-selection" type="button" class="btn btn-secondary"></button>
+      </div>
+    </main>
+
+    <section id="sticky-actions" class="js-section js-section--sticky" hidden>
+      <div class="js-sticky-actions">
+        <div id="sticky-summary" class="js-sticky-actions__summary"></div>
+        <div class="js-sticky-actions__buttons">
+          <button id="sticky-jump-to-preview" type="button" class="btn btn-ghost btn-sm"></button>
+          <button id="sticky-copy-plan" type="button" class="btn btn-success btn-sm"></button>
+        </div>
+      </div>
+    </section>
+
+    <div id="help-overlay" class="js-overlay" hidden>
+      <div class="js-dialog" role="dialog" aria-modal="true" aria-labelledby="help-title">
+        <div class="js-section__header">
+          <h2 id="help-title" class="js-section__title"></h2>
+          <button id="close-help" type="button" class="btn btn-ghost btn-sm">×</button>
+        </div>
+        <div id="help-content" class="js-output" style="max-height: 320px;"></div>
+      </div>
+    </div>
+
+    <div id="toast-container" class="js-toast-container" aria-live="assertive"></div>
+  </div>
+</body>
+</html>
