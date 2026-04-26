@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JiraSnap · Sobre la extensión</title>
+  <meta name="description" content="Presentación de JiraSnap, cómo funciona, sus capacidades, permisos y flujo de uso.">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="topbar">
+          <div class="brand">
+            <img src="../../images/icon128.png" alt="Logo de JiraSnap">
+            <div>
+              <h1>JiraSnap</h1>
+              <p>Extensión para convertir trabajo en Jira en un plan diario claro</p>
+            </div>
+          </div>
+          <nav class="nav-links" aria-label="Navegación de documentación">
+            <a href="./privacy-policy.html">Privacidad</a>
+            <a class="active" href="./about-jirasnap.html">Sobre la extensión</a>
+          </nav>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Presentación del producto</span>
+            <h2>Del tablero de Jira a un mensaje listo para compartir en minutos.</h2>
+            <p class="lead">
+              JiraSnap ayuda a identificar trabajo activo, participantes y subtareas en progreso dentro de un board de Jira,
+              para luego generar un texto profesional que puedas revisar, copiar y pegar en canales como Google Chat.
+            </p>
+            <div class="hero-actions">
+              <a class="button-link primary" href="./privacy-policy.html">Leer política de privacidad</a>
+              <a class="button-link" href="../../README.md">Ir al README</a>
+            </div>
+            <div class="badge-row">
+              <span class="badge">Manifest V3</span>
+              <span class="badge">Bilingüe ES / EN</span>
+              <span class="badge">Jira boards en Atlassian Cloud</span>
+            </div>
+          </div>
+
+          <figure class="shot">
+            <img src="../../screenshots/screenshot_2.png" alt="Captura del popup de JiraSnap">
+            <figcaption>
+              Vista del popup: selección de participantes, revisión de tickets y generación del texto final.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Qué es JiraSnap</h3>
+              <p>Una herramienta de productividad para equipos que trabajan todos los días con Jira.</p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature-card">
+              <h4>Propósito</h4>
+              <p>Reducir el trabajo manual de revisar el board y redactar desde cero el plan del día.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Contexto ideal</h4>
+              <p>Equipos que reportan avance diario y organizan trabajo en historias, tareas y subtareas en progreso.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Resultado</h4>
+              <p>Un mensaje limpio, revisable y fácil de copiar hacia chats de trabajo o reportes rápidos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Capacidades principales</h3>
+            </div>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi"><strong>2 idiomas</strong><span>Español e inglés para la salida generada</span></div>
+            <div class="kpi"><strong>1 popup</strong><span>Centro de control para revisar y copiar</span></div>
+            <div class="kpi"><strong>MV3</strong><span>Arquitectura moderna de extensión Chrome</span></div>
+            <div class="kpi"><strong>Local</strong><span>Lectura del board desde el navegador</span></div>
+          </div>
+
+          <div class="grid-2" style="margin-top:16px;">
+            <article class="feature-card">
+              <h4>Detección inteligente</h4>
+              <ul>
+                <li>Participantes visibles en el filtro o en las tarjetas.</li>
+                <li>Tickets y subtareas en la columna <strong>In Progress</strong>.</li>
+                <li>Metadatos como issue key, summary, estimate, due date y assignee.</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>Edición previa al copiado</h4>
+              <ul>
+                <li>Selección manual de personas.</li>
+                <li>Exclusión de tickets individuales.</li>
+                <li>Opción para incluir o no el tipo de issue en el texto final.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Cómo funciona</h3>
+              <p>Flujo resumido desde Jira hasta el mensaje final.</p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="step">1</div>
+              <div>
+                <h4>Abres un board de Jira</h4>
+                <p>La extensión fue pensada para páginas alojadas en <code>https://*.atlassian.net/*</code>.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">2</div>
+              <div>
+                <h4>JiraSnap inspecciona la vista actual</h4>
+                <p>Usa el DOM visible, <code>data-testid</code>, etiquetas accesibles y lógica de respaldo para identificar el trabajo activo.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">3</div>
+              <div>
+                <h4>Revisas participantes y tickets</h4>
+                <p>El popup permite refinar la selección antes de producir el texto que compartirás.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">4</div>
+              <div>
+                <h4>Copias el plan del día</h4>
+                <p>Se genera una salida amigable para Google Chat, con formato claro y sin necesidad de redactar todo manualmente.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Permisos y alcance</h3>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Elemento</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dominio compatible</td>
+                  <td>Tableros Jira en Atlassian Cloud.</td>
+                </tr>
+                <tr>
+                  <td>Modo de extracción</td>
+                  <td>Lectura local del contenido visible del board, sin depender del API REST en el MVP.</td>
+                </tr>
+                <tr>
+                  <td>Preferencias</td>
+                  <td>Idioma y opciones de salida guardadas localmente.</td>
+                </tr>
+                <tr>
+                  <td>Experiencia de uso</td>
+                  <td>Popup con acciones rápidas, vista previa, ayuda y sección informativa.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Casos de uso ideales</h3>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature-card">
+              <h4>Daily plans</h4>
+              <p>Preparar rápidamente el mensaje de prioridades o actividades del día.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Equipos con subtareas</h4>
+              <p>Especialmente útil cuando el trabajo real está distribuido dentro de historias o tareas padre.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Comunicación consistente</h4>
+              <p>Unifica el formato del reporte diario y reduce omisiones al revisar visualmente el board.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Notas importantes</h3>
+            </div>
+          </div>
+
+          <div class="notice">
+            <ul>
+              <li>La precisión depende de la estructura actual del DOM de Jira y de que la columna <strong>In Progress</strong> esté visible.</li>
+              <li>Los cambios de interfaz de Jira pueden requerir ajustes futuros en selectores y lógica de extracción.</li>
+              <li>Siempre conviene validar la vista previa antes de copiar y compartir el resultado.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <div>
+          <strong>JiraSnap</strong>
+          <p>Creado por Ing. Gustavo Gutierrez · Bogotá, Colombia · Licencia MIT.</p>
+        </div>
+        <div class="nav-links">
+          <a href="./privacy-policy.html">Política de privacidad</a>
+          <a href="../../docs/development-setup.md">Guía de desarrollo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
