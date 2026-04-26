@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JiraSnap · About the Extension</title>
+  <meta name="description" content="Overview of JiraSnap, how it works, what it helps with, and the main capabilities of the extension.">
+  <link rel="canonical" href="https://gustavogutierrez.github.io/jira-snap/about-jirasnap.html">
+  <meta name="theme-color" content="#0f6cbd">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JiraSnap">
+  <meta property="og:title" content="JiraSnap · About the Extension">
+  <meta property="og:description" content="Overview of JiraSnap, how it works, what it helps with, and the main capabilities of the extension.">
+  <meta property="og:url" content="https://gustavogutierrez.github.io/jira-snap/about-jirasnap.html">
+  <meta property="og:image" content="https://gustavogutierrez.github.io/jira-snap/assets/screenshot_2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JiraSnap · About the Extension">
+  <meta name="twitter:description" content="Overview of JiraSnap, how it works, what it helps with, and the main capabilities of the extension.">
+  <meta name="twitter:image" content="https://gustavogutierrez.github.io/jira-snap/assets/screenshot_2.png">
+  <link rel="icon" type="image/png" href="./assets/icon128.png">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="topbar">
+          <div class="brand">
+            <img src="./assets/icon128.png" alt="JiraSnap logo">
+            <div>
+              <h1>JiraSnap</h1>
+              <p>About the extension and how it works</p>
+            </div>
+          </div>
+          <nav class="nav-links" aria-label="Documentation navigation">
+            <a href="./index.html">Home</a>
+            <a class="active" href="./about-jirasnap.html">About</a>
+            <a href="./privacy-policy.html">Privacy</a>
+          </nav>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Product Overview</span>
+            <h2>Turn Jira work in progress into a clean daily update.</h2>
+            <p class="lead">
+              JiraSnap is a Chrome extension built for people who work in Jira every day and need to quickly prepare
+              a clear, professional daily plan. It helps detect active work, review participants, and generate text
+              that is ready to copy into tools like Google Chat.
+            </p>
+            <div class="hero-actions">
+              <a class="button-link primary" href="./privacy-policy.html">Read privacy policy</a>
+              <a class="button-link" href="./index.html">Back to home</a>
+            </div>
+            <div class="badge-row">
+              <span class="badge">Manifest V3</span>
+              <span class="badge">English + Spanish output</span>
+              <span class="badge">Atlassian Cloud boards</span>
+            </div>
+          </div>
+
+          <figure class="shot">
+            <img src="./assets/screenshot_2.png" alt="JiraSnap popup screenshot">
+            <figcaption>
+              The popup lets users review participants, inspect in-progress work, and generate the final message.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>What JiraSnap is for</h3>
+              <p>A focused productivity tool for Jira-based daily planning.</p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature-card">
+              <h4>Reduce manual work</h4>
+              <p>Instead of scanning a Jira board and writing a status update from scratch, the extension prepares a structured summary for you.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Handle real board scenarios</h4>
+              <p>It is especially useful when active work is tracked in subtasks under stories or parent tasks.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Improve consistency</h4>
+              <p>It helps teams share a clean daily update with a more consistent format and fewer omissions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Main capabilities</h3>
+            </div>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi"><strong>2 languages</strong><span>Supports Spanish and English output</span></div>
+            <div class="kpi"><strong>1 popup flow</strong><span>Review, refine, preview, and copy</span></div>
+            <div class="kpi"><strong>MV3</strong><span>Built as a modern Chrome extension</span></div>
+            <div class="kpi"><strong>Local parsing</strong><span>Reads the board from the browser DOM</span></div>
+          </div>
+
+          <div class="grid-2" style="margin-top:16px;">
+            <article class="feature-card">
+              <h4>Smart detection</h4>
+              <ul>
+                <li>Detects visible participants from filters or cards.</li>
+                <li>Finds tickets and subtasks in the <strong>In Progress</strong> column.</li>
+                <li>Captures issue key, summary, estimate, due date, assignee, and issue type.</li>
+              </ul>
+            </article>
+            <article class="feature-card">
+              <h4>User-controlled output</h4>
+              <ul>
+                <li>Select the people to include.</li>
+                <li>Exclude tickets individually before copying.</li>
+                <li>Choose whether issue type appears in the copied text.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>How it works</h3>
+              <p>A simple workflow from Jira board to final message.</p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="step">1</div>
+              <div>
+                <h4>Open a Jira board</h4>
+                <p>JiraSnap is intended for Jira boards hosted on <code>https://*.atlassian.net/*</code>.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">2</div>
+              <div>
+                <h4>JiraSnap inspects the visible board</h4>
+                <p>It reads the current DOM using visible text, accessibility signals, <code>data-testid</code>, and fallback logic.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">3</div>
+              <div>
+                <h4>Review the detected work</h4>
+                <p>The popup allows you to refine participants, remove irrelevant items, and check the preview.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">4</div>
+              <div>
+                <h4>Copy the daily plan</h4>
+                <p>The final output is generated for manual sharing, keeping the user in control of the final message.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Scope and permissions</h3>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Area</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Supported domain</td>
+                  <td>Jira boards in Atlassian Cloud.</td>
+                </tr>
+                <tr>
+                  <td>Extraction model</td>
+                  <td>Local DOM reading from the visible board, without relying on the Jira REST API in the MVP.</td>
+                </tr>
+                <tr>
+                  <td>Saved settings</td>
+                  <td>Stores interface preferences such as language and copy-output options locally.</td>
+                </tr>
+                <tr>
+                  <td>User experience</td>
+                  <td>Popup-first workflow with review, preview, help, and quick actions.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Best fit use cases</h3>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature-card">
+              <h4>Daily planning</h4>
+              <p>Quickly prepare a daily plan or status update from what is already visible on the board.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Subtask-heavy workflows</h4>
+              <p>Useful when the real work is distributed across subtasks rather than only parent tickets.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Consistent communication</h4>
+              <p>Helps teams keep daily reporting cleaner, faster, and more uniform.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>Important notes</h3>
+            </div>
+          </div>
+
+          <div class="notice">
+            <ul>
+              <li>Accuracy depends on Jira’s current DOM structure and the visibility of the <strong>In Progress</strong> column.</li>
+              <li>Future Jira UI changes may require selector and extraction updates.</li>
+              <li>Users should always review the preview before copying and sharing the final message.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <div>
+          <strong>JiraSnap</strong>
+          <p>Static site pages for the extension overview and privacy information.</p>
+        </div>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

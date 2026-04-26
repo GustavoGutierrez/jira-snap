@@ -8,6 +8,11 @@
 
 <p align="center">Created by <strong>Ing. Gustavo Gutierrez</strong> — Bogotá, Colombia.</p>
 
+<p align="center">
+  <a href="https://gustavogutierrez.github.io/jira-snap/">Documentation site</a> ·
+  <a href="./docs/index.html">Local docs entrypoint</a>
+</p>
+
 ---
 
 ## What JiraSnap is for

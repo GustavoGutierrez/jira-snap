@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JiraSnap · Privacy Policy</title>
+  <meta name="description" content="Privacy policy for JiraSnap, a Chrome extension that generates daily plans from Jira boards.">
+  <link rel="canonical" href="https://gustavogutierrez.github.io/jira-snap/privacy-policy.html">
+  <meta name="theme-color" content="#0f6cbd">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JiraSnap">
+  <meta property="og:title" content="JiraSnap · Privacy Policy">
+  <meta property="og:description" content="Privacy policy for JiraSnap, a Chrome extension that generates daily plans from Jira boards.">
+  <meta property="og:url" content="https://gustavogutierrez.github.io/jira-snap/privacy-policy.html">
+  <meta property="og:image" content="https://gustavogutierrez.github.io/jira-snap/assets/jirasnap.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JiraSnap · Privacy Policy">
+  <meta name="twitter:description" content="Privacy policy for JiraSnap, a Chrome extension that generates daily plans from Jira boards.">
+  <meta name="twitter:image" content="https://gustavogutierrez.github.io/jira-snap/assets/jirasnap.png">
+  <link rel="icon" type="image/png" href="./assets/icon128.png">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="topbar">
+          <div class="brand">
+            <img src="./assets/icon128.png" alt="JiraSnap logo">
+            <div>
+              <h1>JiraSnap</h1>
+              <p>Privacy policy for the extension</p>
+            </div>
+          </div>
+          <nav class="nav-links" aria-label="Documentation navigation">
+            <a href="./index.html">Home</a>
+            <a href="./about-jirasnap.html">About</a>
+            <a class="active" href="./privacy-policy.html">Privacy</a>
+          </nav>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Legal Overview · v1.0.0</span>
+            <h2>Local, limited, and purpose-driven data handling.</h2>
+            <p class="lead">
+              JiraSnap is designed to help generate a daily plan from the Jira board currently open in the user’s browser.
+              Based on the current repository implementation, the extension processes information locally in the browser
+              and restricts its scope to Jira boards hosted on <strong>https://*.atlassian.net/*</strong>.
+            </p>
+            <div class="badge-row">
+              <span class="badge">Local browser processing</span>
+              <span class="badge">No Jira API in the MVP</span>
+              <span class="badge">Limited permissions</span>
+            </div>
+          </div>
+
+          <figure class="shot">
+            <img src="./assets/jirasnap.png" alt="JiraSnap brand asset">
+            <figcaption>
+              JiraSnap branding used across the extension and this documentation site.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-card callout">
+          <div class="section-header">
+            <div>
+              <h3>Executive summary</h3>
+            </div>
+          </div>
+          <p>
+            JiraSnap accesses only the information needed to detect participants, tickets, and subtasks that are in progress
+            on the Jira board already open by the user. Its purpose is to generate text that the user can review and copy,
+            for example into Google Chat, without requiring automatic publication to an external service owned by the extension.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>1. Information the extension may process</h3>
+              <p>Only the visible Jira information needed to perform its daily-plan workflow.</p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="feature-card">
+              <h4>Visible board data</h4>
+              <p>Issue keys, summaries, statuses, estimates, due dates, issue types, and visible subtasks.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Detected participants</h4>
+              <p>Names or visible identifiers shown in filters or on cards, used to build the daily summary.</p>
+            </article>
+            <article class="feature-card">
+              <h4>Local preferences</h4>
+              <p>Language settings and output options stored locally through the <code>storage</code> permission.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>2. How that information is used</h3>
+              <p>Functionally, narrowly, and only to support the extension’s purpose.</p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="step">01</div>
+              <div>
+                <h4>Local reading of the Jira DOM</h4>
+                <p>The extension reads the current board view using DOM selectors, visible text, and accessibility signals.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">02</div>
+              <div>
+                <h4>Filtering and selection</h4>
+                <p>Users can choose participants, exclude tickets, and refine the output before copying it.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="step">03</div>
+              <div>
+                <h4>Daily plan generation</h4>
+                <p>The output is prepared for manual copying by the user; the extension does not automatically post it.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>3. What JiraSnap is not intended to collect</h3>
+              <p>A reduced scope compared with analytics, tracking, or account-based services.</p>
+            </div>
+          </div>
+
+          <div class="notice">
+            <ul>
+              <li>It does not require users to create a JiraSnap account.</li>
+              <li>It does not include payment or signup flows in the current implementation.</li>
+              <li>It does not need access to websites outside the Jira domain listed in <code>host_permissions</code>.</li>
+              <li>It does not rely on a dedicated external API to build the board summary in its current version.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>4. Permissions and rationale</h3>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Permission</th>
+                  <th>Why it is needed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>storage</code></td>
+                  <td>Stores popup preferences such as language and copied-output options.</td>
+                </tr>
+                <tr>
+                  <td><code>activeTab</code></td>
+                  <td>Works against the active Jira tab selected by the user.</td>
+                </tr>
+                <tr>
+                  <td><code>scripting</code></td>
+                  <td>Supports extension logic and board-side behavior under Manifest V3.</td>
+                </tr>
+                <tr>
+                  <td><code>https://*.atlassian.net/*</code></td>
+                  <td>Restricts access to Jira-hosted pages relevant to the extension workflow.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>5. Retention and user control</h3>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <article class="feature-card">
+              <h4>Limited persistence</h4>
+              <p>Persistent data is limited to local functional preferences. Board content is used to generate the view and copyable output.</p>
+            </article>
+            <article class="feature-card">
+              <h4>User control</h4>
+              <p>The user decides which participants to include, which tickets to remove, and when to copy the final result.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>6. Security and limitations</h3>
+            </div>
+          </div>
+
+          <div class="notice">
+            <p>
+              JiraSnap depends on Jira’s visual and semantic DOM structure. If Atlassian changes that markup,
+              some selectors may need updates. As a best practice, users should always review the generated preview before sharing it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-header">
+            <div>
+              <h3>7. Changes to this policy</h3>
+            </div>
+          </div>
+          <p>
+            This policy may be updated if the extension’s permissions, architecture, or functional scope changes.
+            The current version published with the project should be treated as the active reference.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <div>
+          <strong>JiraSnap</strong>
+          <p>Static site pages for the extension overview and privacy information.</p>
+        </div>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./about-jirasnap.html">About the extension</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
