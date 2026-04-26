@@ -216,7 +216,6 @@ The extension currently uses:
 
 - `storage`
 - `activeTab`
-- `scripting`
 - `https://*.atlassian.net/*` host permissions
 
 These permissions are expected for the current board-driven behavior.

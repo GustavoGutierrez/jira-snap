@@ -19,6 +19,9 @@ build/
 coverage/
 .cache/
 
+# Packaging leftovers
+*.zip
+
 # Environment / local secrets
 .env
 .env.*

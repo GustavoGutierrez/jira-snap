@@ -256,7 +256,6 @@ jira-snap/
 |---|---|
 | `storage` | Save popup preferences such as language and output options |
 | `activeTab` | Access the active Jira tab |
-| `scripting` | Support board-side logic under MV3 |
 | `host_permissions: https://*.atlassian.net/*` | Restrict access to Jira-hosted boards |
 
 ---
