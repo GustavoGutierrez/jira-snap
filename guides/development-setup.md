@@ -39,7 +39,7 @@ jira-snap/
 ├── content-script.js
 ├── popup.html
 ├── popup.js
-├── docs/
+├── guides/
 │   └── development-setup.md
 ├── images/
 ├── styles/

@@ -200,7 +200,7 @@ The popup is designed for quick daily use.
 
 For a complete local development and unpacked-extension guide, see:
 
-- [`docs/development-setup.md`](./docs/development-setup.md)
+- [`guides/development-setup.md`](./guides/development-setup.md)
 
 ---
 
@@ -230,7 +230,7 @@ jira-snap/
 ├── popup.js
 ├── extractors/
 │   └── jira.js
-├── docs/
+├── guides/
 │   └── development-setup.md
 ├── styles/
 │   └── pico-local.min.css
