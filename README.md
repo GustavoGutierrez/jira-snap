@@ -13,6 +13,14 @@
   <a href="./docs/index.html">Local docs entrypoint</a>
 </p>
 
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/jirasnap/gpkadidhcnhiealgjokhfjlgnbaojogd?utm_source=homepage&utm_medium=referral">
+    <img src="https://img.shields.io/badge/Chrome_Web_Store-Install%20Now-blue?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Available in Chrome Web Store">
+  </a>
+  <img src="https://img.shields.io/github/v/release/gustavogutierrez/jira-snap?style=for-the-badge" alt="Latest version">
+  <img src="https://img.shields.io/github/license/gustavogutierrez/jira-snap?style=for-the-badge" alt="MIT License">
+</p>
+
 ---
 
 ## What JiraSnap is for
